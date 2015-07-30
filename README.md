@@ -1,0 +1,6 @@
+# AIDL_construct
+在实际的项目中，如果进程A和进程B进行AIDL绑定通信，通常B进程中的Service不止一个。 
+
+这时候采用将A进程和B进程的一个MainService绑定，再通过MainService获得B进程中其他service的接口。这样一来，绑定了一个MainService就可以与所有service交互。 代码的架构将清晰明了。
+
+仅供参考。
